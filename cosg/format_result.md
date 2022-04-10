@@ -1,3 +1,4 @@
+```python
 def format_degs(adata, key, cal_logFC = True, wide = True):
 	result = adata.uns[key]
 	groups = result['names'].dtype.names
@@ -22,3 +23,4 @@ def format_degs(adata, key, cal_logFC = True, wide = True):
 			degs.columns = ['gene', 'score', 'group']
 	return degs
 	
+```
