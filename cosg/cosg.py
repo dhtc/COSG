@@ -579,10 +579,6 @@ def cosg(
         adata.uns[key_added][col]=rank_stats[col].to_records(
     index=False, column_dtypes=dtypes[col]
     )
-        
-    
-        
-    print('**finished identifying marker genes by COSG**')
-        
+       
     ### Return the result
     return adata if copy else None
